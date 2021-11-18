@@ -1,6 +1,4 @@
 const inquirer=require('inquirer')
-const { userInfo } = require('os')
-const internal = require('stream')
 
 
 
@@ -68,8 +66,16 @@ function engineer(){
             type:'input',
             name:'github',
             message:'What is your github?'
+        },
+        {
+            type:'confirm',
+            name:'addAnother',
+            message:'Would you like to add another employee?',
+            
         }
-    ])
+    ]).then((answers)=>{
+        if(answers.addAnother===true){employeeQ()}
+    })
 }
 
 function intern(){
@@ -78,9 +84,17 @@ function intern(){
             type:'input',
             name:'school',
             message:'Where did you attend school?'
+        },{
+            type:'confirm',
+            name:'addAnother',
+            message:'Would you like to add another employee?',
+            
         }
-    ])
+    ]).then((answers)=>{
+        if(answers.addAnother===true){employeeQ()}
+    })
 }
+
 
 managerQ()
 
