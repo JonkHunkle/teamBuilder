@@ -1,11 +1,11 @@
 {
-  "dependencies": {
-    "inquirer": "^8.2.0",
-    "jest": "^27.3.1"
-  },
   "name": "teambuilder",
   "version": "1.0.0",
   "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,9 @@
     "url": "https://github.com/JonkHunkle/teamBuilder/issues"
   },
   "homepage": "https://github.com/JonkHunkle/teamBuilder#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "inquirer": "^8.2.0"
+  }
 }
