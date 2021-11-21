@@ -1,6 +1,7 @@
 {
   "name": "teambuilder",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -20,9 +21,12 @@
     "url": "https://github.com/JonkHunkle/teamBuilder/issues"
   },
   "homepage": "https://github.com/JonkHunkle/teamBuilder#readme",
-  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
   "dependencies": {
-    "bootstrap": "^5.1.3",
     "inquirer": "^8.2.0"
   }
 }
