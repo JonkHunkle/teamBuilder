@@ -2,8 +2,42 @@ const fs=require('fs')
 const Manager=require('./lib/manager')
 const Engineer=require('./lib/engineer')
 const Intern=require('./lib/intern')
+const Employee = require('./lib/employee')
 
 
+
+workerCard = function separate(team){
+  for (let i = 1; i < team.length; i++) {
+    if(team.role==='Engineer'){
+      return `
+      <div id='engineer' class=''>
+        <h3>Say hello to the engineer!</h3>
+        <ul>
+        <li>${team[0].name}</li>
+        <li>${team[0].id}</li>
+        <li>${team[0].email}</li>
+        <li>${team[0].github}</li>
+        </ul>
+      </div>
+      `
+    }else if(team.role==='Intern'){
+    
+     return `
+<div id='intern' class=''>
+  <h3>Say hello to the intern!</h3>
+  <ul>
+  <li>${team[0].name}</li>
+  <li>${team[0].id}</li>
+  <li>${team[0].email}</li>
+  <li>${team[0].school}</li>
+  </ul>
+</div>
+`
+    }
+    break
+    
+  }
+}
 
 
 
@@ -39,6 +73,7 @@ function fakeHTML(team) {
       </header>
       <div>
         ${managerCard}
+        ${workerCard()}
         
         
         
