@@ -16,12 +16,9 @@ function init(){
             
         },
     ]).then((answers)=>{
-        if (answers.manager===false){
+        if (answers.role===false){
             console.log('go get the manager')
-        }else managerQ()
-        
-        
-        
+        }else managerQ()    
     })
 }
 
@@ -65,29 +62,30 @@ function employeeQ(data, answer){
         
     ]).then((answers)=>{
         //add code to push new employee to team array
-       console.log('this is data.role',data.role)
+       //console.log('this is data.role',data.role)
       
        
        if(data.office){
         const newManager= new Manager(answers.username, answers.idNum, answers.email, data.office)
-        console.log('in new manager class', newManager)
+        //console.log('in new manager class', newManager)
        team.push(newManager)
        }else
        if(data.role==='Engineer'){
         
         const newEngineer=new Engineer(answers.username, answers.idNum, answers.email, answer.github,data.role)
-            console.log('in new engineer class',newEngineer)   
+            //console.log('in new engineer class',newEngineer)   
         team.push(newEngineer)
        }else if(data.role==='Intern'){
           
         const newIntern= new Intern(answers.username, answers.idNum, answers.email, answer.school, data.role)
-        console.log('in new intern class',newIntern)
+        //console.log('in new intern class',newIntern)
         team.push(newIntern)
         }
         if(answers.add){
             newEmployee()
-    }else {writeHTML()}
-console.log('this is the team in index',team)})
+    }else {writeHTML(team)}
+//console.log('this is the team in index',team)
+})
 }
 
 function newEmployee(){
@@ -130,7 +128,7 @@ function intern(data){
 
 
 function writeHTML(){
-    console.log("write html", team)
+    //console.log("write html", team)
 fs.writeFile('./dist/indexfun.html', fakeHTML(team),
     (err) =>
       err ? console.error(err) : console.log("Success!")
