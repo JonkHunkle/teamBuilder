@@ -27,6 +27,7 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.3"
   }
 }
