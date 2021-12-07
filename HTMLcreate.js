@@ -26,8 +26,13 @@ function fakeHTML(team) {
             <ul>
             <li>${team[i].name}</li>
             <li>${team[i].id}</li>
-            <li>${team[i].email}</li>
-            <li>${team[i].github}</li>
+            <li><a class='hover:text-red-500' href = "mailto:${team[i].email}?subject = Hello!&body = Message">
+            ${team[i].email}
+            </a>
+            </li>
+            <li><a class='hover:text-red-500' href = "https://www.github.com/${team[i].github}" target = "_blank"> ${team[i].github}</a>
+            
+           </li>
             </ul>
           </div>
           `;
@@ -38,7 +43,10 @@ function fakeHTML(team) {
       <ul>
       <li>${team[i].name}</li>
       <li>${team[i].id}</li>
-      <li>${team[i].email}</li>
+      <li><a class='hover:text-red-500' href = "mailto:${team[i].email}?subject = Hello!&body = Message">
+            ${team[i].email}
+            </a>
+            </li>
       <li>${team[i].school}</li>
       </ul>
     </div>
@@ -56,7 +64,10 @@ function fakeHTML(team) {
   <ul>
   <li>${team[0].name}</li>
   <li>${team[0].id}</li>
-  <li>${team[0].email}</li>
+  <li ><a class='hover:text-red-500' href = "mailto:${team[0].email}?subject = Hello!&body = Message">
+            ${team[0].email}
+            </a>
+            </li>
   <li>${team[0].office}</li>
   </ul>
 </div>
