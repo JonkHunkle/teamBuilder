@@ -20,15 +20,15 @@ This is a node.js application that runs in the terminal to generate an HTML page
 
 Tests can be run in the terminal with Jest. Once you have completed the ```npm install``` from installation of this application. Run ``` jest test``` from your terminal to test. All tests are located in the ```tests``` directory.
 
-## Sample of the Generated Profile
+## Sample of the Generated Website
 
-[Sample Generated Profile](https://jonkhunkle.github.io/teamBuilder/dist/indexfun.html)
+[Sample Generation](https://jonkhunkle.github.io/teamBuilder/dist/indexfun.html)
 
 ## Demonstration Videos
 
-[Application Deployment Demonstration Video](https://drive.google.com/file/d/1Evf_E47jzneXvAQRS4S4YkQRReOT99Zk/view?usp=sharing)
+[Deployment Demonstration Video](https://drive.google.com/file/d/1Evf_E47jzneXvAQRS4S4YkQRReOT99Zk/view?usp=sharing)
 
-[Application Tests Demonstration Video](https://drive.google.com/file/d/1e5-Uarv-KCMZ8ZzTivt7n3yhR0BAPBmX/view?usp=sharing)
+[Tests Demonstration Video](https://drive.google.com/file/d/1e5-Uarv-KCMZ8ZzTivt7n3yhR0BAPBmX/view?usp=sharing)
 
 ## Contributing
   
