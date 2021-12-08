@@ -80,7 +80,7 @@ function fakeHTML(team) {
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="../tailwind.css" rel="stylesheet">
+      <link href="../assets/tailwind.css" rel="stylesheet">
     </head>
     <body class='bg-blue-800  flex flex-col'>
       <header class='m-3 border-2 border-black bg-white-300'> 
