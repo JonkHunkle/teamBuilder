@@ -30,6 +30,9 @@ Tests can be run in the terminal with Jest. Once you have completed the ```npm i
 
 [Tests Demonstration Video](https://drive.google.com/file/d/1e5-Uarv-KCMZ8ZzTivt7n3yhR0BAPBmX/view?usp=sharing)
 
+<br/>
+![builder](https://i.imgur.com/09spSZC.png)
+
 ## Contributing
   
 To contribute to this project, fork this repo and send a pull request for any suggest changes. They will be reviewed as received.
